@@ -60,10 +60,17 @@
             }
         }
     }
-    main{
-        padding-top: 15vh;
+    
+    .title{
+        padding-top: 12vh;
+        
+        .title__main{
+            font-size: 3rem;
+        }
     }
 }
+
+
 @for $i from 1 through 5{
     .nav-menu__item:nth-child(#{$i}){
         transition-delay: ($i * 0.1s);

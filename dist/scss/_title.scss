@@ -1,0 +1,14 @@
+@import './config';
+
+.title{
+    text-align: center;
+
+    &__main{
+        font-size: 4rem;
+
+        &--name{
+            color: $secendery-color;
+            font-style: italic;
+        }
+    }
+}
