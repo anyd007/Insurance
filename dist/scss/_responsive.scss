@@ -1,0 +1,71 @@
+@import './config';
+
+@include screen(tablets){
+
+    .menu-btn{
+        visibility: visible;
+    }
+    .nav{
+        position: fixed;
+        visibility: hidden;
+        grid-template-columns: 1fr;
+
+        &.open{
+            visibility: visible;
+        }
+
+        .nav-logo{
+            width: 20vw;
+            transform: translateX(0);
+            visibility: visible;
+            @include smooth;
+
+            &.open{
+                transform: translateX(-100vw);
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        .nav-menu{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            @include smooth;
+            transform: translateY(-100%);
+            background:  $menuBackground;
+
+            &.open{
+                transform: translate(0);
+            }
+
+            &__item{
+                transform: translateX(100vw);
+                @include smooth;
+
+                &.open{
+                    transform: translateX(0);
+                }
+            }
+
+            &__link{
+                display: inline-block;
+                font-size: 2rem;
+                padding: 1.5rem 0;
+                @include smooth;
+            }
+        }
+    }
+    main{
+        padding-top: 15vh;
+    }
+}
+@for $i from 1 through 5{
+    .nav-menu__item:nth-child(#{$i}){
+        transition-delay: ($i * 0.1s);
+    }
+}

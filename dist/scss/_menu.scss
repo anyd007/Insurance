@@ -1,0 +1,125 @@
+@import './config';
+
+.menu-btn{
+    position: absolute;
+    z-index: 2;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+    @include smooth;
+    visibility: hidden;
+
+    &__burger{
+        position: absolute;
+        right: 0%;
+        top: 0.5rem;
+        width: 30px;
+        height: 3px;
+        background: $mianFont;
+        @include smooth;
+
+        &::before{
+            position: absolute;
+            content: '';
+            right: 0%;
+            top: -8px;
+            width: 30px;
+            height: 3px;
+            @include smooth;
+            background:  $mianFont;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            right: 0%;
+            top: 8px;
+            width: 23px;
+            height: 3px;
+            @include smooth;
+            background: $mianFont;
+        }
+
+        &.open{
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before{
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &::after{
+                width: 30px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+.nav{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15vw 1fr;
+    align-items: flex-start;
+    width: 100vw;
+    visibility: visible;
+
+    .nav-logo{
+        margin-top: -28px;
+        height: auto;
+        width: 14vw;
+    }
+
+    .nav-menu{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-items: center;
+        list-style: none;
+
+        &__item{
+            position: relative;
+            overflow: hidden;
+
+            &::before{
+                position: absolute;
+                content: '';
+                height: 4px;
+                width: 100%;
+                background: $secendery-color;
+                opacity: 0;
+                left: 100%;
+                top: 0%;
+                @include smooth;
+            }
+
+            &:hover::before{
+                opacity: 0.9;
+                left: 0%;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                height: 4px;
+                width: 100%;
+                background: $secendery-color;
+                opacity: 0;
+                right: 100%;
+                bottom: 0%;
+                @include smooth;
+            }
+
+            &:hover::after{
+                opacity: 0.9;
+                right: 0%;
+            }
+        }
+
+        &__link{
+            font-size: 1.5rem;
+        }
+        
+    }
+}
