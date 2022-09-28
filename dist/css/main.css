@@ -173,6 +173,9 @@
   .title .title__main {
     font-size: 3rem;
   }
+  main .about {
+    margin: 0 auto;
+  }
   main .about__info--text {
     font-size: 1.5rem;
   }
@@ -182,6 +185,9 @@
   }
 }
 @media (max-width: 600px) {
+  .title .title__main {
+    letter-spacing: 3px;
+  }
   main .about {
     width: 95%;
     margin: 0 auto;

@@ -92,7 +92,7 @@
   }
 
   main .about{
-    
+    margin: 0 auto;
     &__info{
 
         &--text{
@@ -111,6 +111,14 @@
 }
 
 @include screen(phones) {
+
+  .title{
+
+    .title__main{
+        letter-spacing: 3px;
+    }
+  }  
+
   main .about {
     width: 95%;
     margin: 0 auto;
