@@ -1,32 +1,26 @@
 @import "./config";
 
-@include screen(laptops){
-    .nav{
-
-        .nav-menu{
-
-            &__link{
-                font-size: 1.5rem;
-            }
-        }
+@include screen(laptops) {
+  .nav {
+    .nav-menu {
+      &__link {
+        font-size: 1.5rem;
+      }
     }
+  }
 
-    main .about{
-
-        &__photo{
-
-            &--img{
-                width: 360px;
-                height: 360px;
-            }
-        }
+  main .about {
+    &__photo {
+      &--img {
+        width: 360px;
+        height: 360px;
+      }
     }
+  }
 
-    main .offer{
-        grid-auto-rows: 13vw;
-    }
-    
-
+  main .offer {
+    grid-auto-rows: 13vw;
+  }
 }
 
 @include screen(tablets) {
@@ -97,72 +91,66 @@
     }
   }
 
-  main .about{
+  main .about {
     margin: 0 auto;
-    &__info{
-
-        &--text{
-            font-size: 1.5rem;
-        }
+    &__info {
+      &--text {
+        font-size: 1.5rem;
+      }
     }
 
-    &__photo{
-
-        &--img{
-            width: 300px;
-            height: 300px;
-        }
+    &__photo {
+      &--img {
+        width: 300px;
+        height: 300px;
+      }
     }
   }
 
-  main .offer{
-
-    &__title{
-        font-size: 2rem;
+  main .offer {
+    &__title {
+      font-size: 2rem;
     }
 
-    &__name{
-        &--text{
-            font-size: 1.2rem;
-        }
+    &__name {
+      &--text {
+        font-size: 1.2rem;
+      }
     }
 
-    &__detals{
-        &--text{
-            font-size: 1rem;
-        }
+    &__detals {
+      &--text {
+        font-size: 1rem;
+      }
     }
   }
 
-  main .media{
-    &__title{
-        font-size: 2rem;
+  main .media {
+    &__title {
+      font-size: 2rem;
     }
 
-    .media-contener{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .media-contener {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
 
-        &__item{
-
-            &--img{
-                width: 40vw;
-                height: auto;
-                border-radius: 10px;
-            }
+      &__item {
+        &--img {
+          width: 40vw;
+          height: auto;
+          border-radius: 10px;
         }
+      }
     }
   }
 }
 
 @include screen(phones) {
-
-  .title{
-
-    .title__main{
-        letter-spacing: 3px;
+  .title {
+    .title__main {
+      letter-spacing: 3px;
     }
-  }  
+  }
 
   main .about {
     width: 95%;
@@ -171,37 +159,35 @@
     padding-top: 5vw;
   }
 
-  main .offer{
+  main .offer {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-   
-    &__title{
-        grid-column: auto;
+
+    &__title {
+      grid-column: auto;
     }
 
-    &__name{
-        border-bottom: none;
-        margin-top: 1rem;
+    &__name {
+      border-bottom: none;
+      margin-top: 1rem;
     }
   }
 
-  main .media{
+  main .media {
     gap: 25px;
 
-    .media-contener{
-        grid-template-columns: 1fr;
-        gap: 25px;
+    .media-contener {
+      grid-template-columns: 1fr;
+      gap: 25px;
 
-        &__item{
-
-            &--img{
-                width: 80vw;
-            }
+      &__item {
+        &--img {
+          width: 80vw;
         }
+      }
     }
   }
 }
-
 
 @for $i from 1 through 5 {
   .nav-menu__item:nth-child(#{$i}) {

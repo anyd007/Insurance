@@ -25,7 +25,9 @@ const showPhoto = (e)=>{
 const closeFullScreen = e =>{
     if(e.target.matches(".fullScreen")){
         fullImg.classList.remove("fullImg")
+        fullImg.removeAttribute('src')
         fullScreen.classList.remove("fullScreen")
+
     }
 }
 
