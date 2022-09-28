@@ -21,6 +21,10 @@
             }
         }
     }
+
+    main .offer{
+        grid-auto-rows: 13vw;
+    }
 }
 
 @include screen(tablets) {
@@ -108,6 +112,25 @@
         }
     }
   }
+
+  main .offer{
+
+    &__title{
+        font-size: 2rem;
+    }
+
+    &__name{
+        &--text{
+            font-size: 1.2rem;
+        }
+    }
+
+    &__detals{
+        &--text{
+            font-size: 1rem;
+        }
+    }
+  }
 }
 
 @include screen(phones) {
@@ -124,6 +147,20 @@
     margin: 0 auto;
     grid-template-columns: 1fr;
     padding-top: 5vw;
+  }
+
+  main .offer{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 3rem;
+   
+    &__title{
+        grid-column: auto;
+    }
+
+    &__name{
+        border-bottom: none;
+        margin-top: 1rem;
+    }
   }
 }
 

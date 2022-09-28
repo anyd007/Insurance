@@ -22,6 +22,7 @@
 
     <title>Ubezpieczenia</title>
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -52,12 +53,12 @@
     </header>
 
     <main>
-        <section class="title">
+        <section data-aos="fade-in" data-aos-delay="50" class="title">
             <h1 class="title__main">UBEZPIECZENIA 
                 <br /><span class="title__main--name">Emila Nawrocka</span>
             </h1>
         </section>
-        <section class="about">
+        <section class="about" data-aos="fade-in" data-aos-delay="80" >
             <div class="about__info">
                 <p class="about__info--text">Dzień dobry jestem Emila i jestem zajebista.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit 
@@ -69,9 +70,57 @@
                 <img class="about__photo--img" src="./images/zdjecie_agenta.webp" alt="zdjęcie agenta">
             </div>
         </section>
+
+        <section class="offer">
+            <h2 class="offer__title" data-aos="slide-up">OFERTA</h2>
+            <div class="offer__name" data-aos="slide-up">
+                <p class="offer__name--text">UBEZPIECZENIE NA ŻYCIE</p>
+            </div>
+            <div class="offer__detals" data-aos="slide-up">
+                <p class="offer__detals--text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa aliquam quisquam est? Eveniet laboriosam numquam iste suscipit. 
+                    Soluta, alias? Perferendis!
+                </p>
+            </div>
+            <div class="offer__name" data-aos="slide-up">
+                <p class="offer__name--text">UBEZPIECZENIE DOMU</p>
+            </div>
+            <div class="offer__detals" data-aos="slide-up">
+                <p class="offer__detals--text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa aliquam quisquam est? Eveniet laboriosam numquam iste suscipit. 
+                    Soluta, alias? Perferendis!
+                </p>
+            </div>
+            <div class="offer__name" data-aos="slide-up">
+                <p class="offer__name--text">UBEZPIECZENIE AUTA</p>
+            </div>
+            <div class="offer__detals" data-aos="slide-up">
+                <p class="offer__detals--text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa aliquam quisquam est? Eveniet laboriosam numquam iste suscipit. 
+                    Soluta, alias? Perferendis!
+                </p>
+            </div>
+            <div class="offer__name" data-aos="slide-up">
+                <p class="offer__name--text">UBEZPIECZENIE OD WYPADKU</p>
+            </div>
+            <div class="offer__detals" data-aos="slide-up">
+                <p class="offer__detals--text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa aliquam quisquam est? Eveniet laboriosam numquam iste suscipit. 
+                    Soluta, alias? Perferendis!
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer></footer>
 <script type="module" src="./dist/js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>

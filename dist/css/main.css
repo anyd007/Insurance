@@ -115,6 +115,9 @@
     width: 360px;
     height: 360px;
   }
+  main .offer {
+    grid-auto-rows: 13vw;
+  }
 }
 @media (max-width: 768px) {
   .menu-btn {
@@ -183,6 +186,15 @@
     width: 300px;
     height: 300px;
   }
+  main .offer__title {
+    font-size: 2rem;
+  }
+  main .offer__name--text {
+    font-size: 1.2rem;
+  }
+  main .offer__detals--text {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 600px) {
   .title .title__main {
@@ -193,6 +205,17 @@
     margin: 0 auto;
     grid-template-columns: 1fr;
     padding-top: 5vw;
+  }
+  main .offer {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 3rem;
+  }
+  main .offer__title {
+    grid-column: auto;
+  }
+  main .offer__name {
+    border-bottom: none;
+    margin-top: 1rem;
   }
 }
 .nav-menu__item:nth-child(1) {
@@ -244,6 +267,35 @@
 }
 .about__info--text {
   font-size: 1.7rem;
+}
+
+.offer {
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 5vh;
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+  grid-auto-rows: 9vw;
+}
+.offer__title {
+  font-size: 3rem;
+  color: #ff652f;
+  grid-column: 1/span 2;
+}
+.offer__name {
+  border-bottom: 1px solid black;
+}
+.offer__name--text {
+  color: #ff652f;
+  font-size: 1.5rem;
+}
+.offer__detals {
+  border-bottom: 1px solid black;
+}
+.offer__detals--text {
+  font-size: 1.3rem;
+  font-style: italic;
 }
 
 * {
