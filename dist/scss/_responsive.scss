@@ -25,6 +25,8 @@
     main .offer{
         grid-auto-rows: 13vw;
     }
+    
+
 }
 
 @include screen(tablets) {
@@ -139,7 +141,7 @@
 
     .media-contener{
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 20px;
 
         &__item{
 
@@ -188,7 +190,7 @@
 
     .media-contener{
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 25px;
 
         &__item{
 

@@ -7,6 +7,7 @@
     grid-template-rows: 9vw auto;
     text-align: center;
     margin: 0 auto;
+    gap: 10px;
 
     &__title{
         color: $secendery-color;
@@ -16,14 +17,14 @@
     .media-contener{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 20px;
 
         &__item{
-
             &--img{
                 width: 30vw;
                 height: auto;
                 border-radius: 10px;
+                box-shadow: 5px 6px 7px 2px $primary-color;
             }
         }
     }
