@@ -1,0 +1,34 @@
+@import './config';
+
+.media{
+    width: 95%;
+    padding-top: 5vw;
+    display: grid;
+    grid-template-rows: 9vw auto;
+    text-align: center;
+    margin: 0 auto;
+
+    &__title{
+        color: $secendery-color;
+        font-size: 3rem;
+    }
+
+    .media-contener{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        &__item{
+
+            &--img{
+                width: 30vw;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__more{
+        color: $secendery-color;
+    }
+}

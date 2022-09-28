@@ -131,6 +131,26 @@
         }
     }
   }
+
+  main .media{
+    &__title{
+        font-size: 2rem;
+    }
+
+    .media-contener{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        &__item{
+
+            &--img{
+                width: 40vw;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+  }
 }
 
 @include screen(phones) {
@@ -160,6 +180,22 @@
     &__name{
         border-bottom: none;
         margin-top: 1rem;
+    }
+  }
+
+  main .media{
+    gap: 25px;
+
+    .media-contener{
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+        &__item{
+
+            &--img{
+                width: 80vw;
+            }
+        }
     }
   }
 }
