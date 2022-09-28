@@ -208,7 +208,7 @@
   }
   main .offer {
     grid-template-columns: 1fr;
-    grid-auto-rows: 3rem;
+    grid-auto-rows: auto;
   }
   main .offer__title {
     grid-column: auto;
@@ -302,6 +302,7 @@
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
+  scroll-behavior: smooth;
 }
 
 body {
