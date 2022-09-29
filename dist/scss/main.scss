@@ -1,4 +1,4 @@
-@import './config', './menu', './responsive', './title', './about', './offer', './media';
+@import './config', './menu', './responsive', './title', './about', './offer', './media', './scroll';
 
 *{
     box-sizing: border-box;
@@ -36,19 +36,20 @@ button{
     cursor: pointer;
     padding: 5px 15px;
     background: transparent;
-    border-radius: 10px;
     color: $mianFont;
-    border: 1px solid $primary-color;
-    box-shadow: 5px 6px 7px 2px $primary-color;
+    border: 2px solid $primary-color;
+    box-shadow: 3px 3px 15px 0px $primary-color;
     overflow: hidden;
+    @include smooth;
 
     &:hover{
         @include smooth;
         color: black;
+        box-shadow: 3px 3px 15px 5px $primary-color;
+        border-radius: 10px;
     }
 
     &::after{
-        border-radius: 10px;
         position: absolute;
         content: '';
         width: 100%;
@@ -65,6 +66,8 @@ button{
         top: 0%;
 }
 }
+
+// popup do zdjęć
 .fullScreen{
     position: fixed;
     left: 0%;
@@ -93,4 +96,7 @@ button{
         width: 80%;
         top: 20%;
     }
+}
+.stopScroll{
+    overflow: hidden;
 }

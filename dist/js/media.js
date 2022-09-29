@@ -16,6 +16,7 @@ const showPhoto = (e)=>{
                   fullImg.setAttribute('src', img.src)
                   fullImg.classList.add("fullImg")
                   fullScreen.classList.add("fullScreen")
+                  document.querySelector('body').classList.add("stopScroll")
 
                 }
             })
@@ -27,7 +28,7 @@ const closeFullScreen = e =>{
         fullImg.classList.remove("fullImg")
         fullImg.removeAttribute('src')
         fullScreen.classList.remove("fullScreen")
-
+        document.querySelector('body').classList.remove("stopScroll")
     }
 }
 

@@ -3,6 +3,7 @@ const burger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
 const navMenu = document.querySelector(".nav-menu");
 const navItems = document.querySelectorAll(".nav-menu__item");
+const navLinks = document.querySelectorAll(".nav-menu__link");
 const logo = document.querySelector(".nav-logo")
 
 let showMenu = false;
