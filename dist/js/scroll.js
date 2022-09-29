@@ -13,5 +13,5 @@ else{
 
 window.addEventListener("scroll", showScroll)
 scrollArrow.addEventListener("click", ()=>{
-    document.documentElement.scrollTop = 0
+    document.documentElement.scrollTop = 0;
 })
