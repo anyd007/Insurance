@@ -414,7 +414,7 @@ img {
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  color: #ff652f;
+  color: #ff652f !important;
   cursor: pointer;
   font-size: 2rem;
   -webkit-animation-name: first-look;
