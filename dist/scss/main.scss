@@ -27,8 +27,8 @@ main{
     height: 100%;
 }
 a{
-    text-decoration: none;
-    color: $mianFont;
+    text-decoration: none !important;
+    color: $mianFont !important;
 }
 
 button{

@@ -135,9 +135,6 @@
   .nav.open {
     visibility: visible;
   }
-  .nav .nav-logo {
-    visibility: visible;
-  }
   .nav .nav-menu {
     display: flex;
     flex-direction: column;
@@ -503,8 +500,8 @@ main {
 }
 
 a {
-  text-decoration: none;
-  color: #0399D9;
+  text-decoration: none !important;
+  color: #0399D9 !important;
 }
 
 button {
