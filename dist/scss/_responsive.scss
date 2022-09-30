@@ -137,6 +137,17 @@
       }
     }
   }
+  main .contact{
+    grid-template-rows: 1fr;
+  
+  .contact-contener{
+    grid-template-columns: 1fr;
+
+    &__item a{
+      font-size: 1.5rem;
+    }
+  }
+}
 }
 
 @include screen(phones) {

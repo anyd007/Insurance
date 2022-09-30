@@ -1,0 +1,30 @@
+@import './config';
+
+.contact{
+    width: 95%;
+    padding-top: 15vw;
+    display: grid;
+    grid-template-rows: 9vw auto;
+    text-align: center;
+    margin: 0 auto;
+    gap: 10px;
+
+
+    &__title{
+        color: $secendery-color;
+        font-size: 3rem;
+    }
+
+    .contact-contener{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        &__item{
+
+            a{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
