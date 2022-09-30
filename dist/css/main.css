@@ -53,21 +53,22 @@
 .nav {
   position: relative;
   display: grid;
-  grid-template-columns: 15vw 1fr;
+  grid-template-columns: 1fr;
   align-items: flex-start;
   width: 100%;
   visibility: visible;
 }
 .nav .nav-logo {
-  margin-top: -28px;
   height: auto;
   width: 14vw;
+  position: absolute;
 }
 .nav .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   list-style: none;
+  width: 100%;
 }
 .nav .nav-menu__item {
   position: relative;
@@ -135,15 +136,7 @@
     visibility: visible;
   }
   .nav .nav-logo {
-    width: 20vw;
-    transform: translateX(0);
     visibility: visible;
-    transition: all 0.5s ease-in-out;
-  }
-  .nav .nav-logo.open {
-    transform: translateX(-100vw);
-    display: none;
-    visibility: hidden;
   }
   .nav .nav-menu {
     display: flex;
@@ -405,6 +398,39 @@ img {
   background: #F0E6E5;
   padding: 20px 0;
 }
+.gallery__title {
+  padding-top: 1rem;
+  color: #ff652f;
+  font-size: 2.5rem;
+}
+.gallery__back {
+  display: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ff652f;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-animation-name: first-look;
+          animation-name: first-look;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  text-decoration: none !important;
+}
+.gallery__back:hover {
+  -webkit-animation-name: move-back;
+          animation-name: move-back;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #ff652f;
+}
+@media (max-width: 768px) {
+  .gallery__back {
+    display: inline;
+  }
+}
 .gallery img {
   background: #ffffff;
   width: 100%;
@@ -418,11 +444,45 @@ img {
   width: 100%;
 }
 
+@-webkit-keyframes move-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 45%;
+  }
+}
+
+@keyframes move-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 45%;
+  }
+}
+@-webkit-keyframes first-look {
+  from {
+    left: 45%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes first-look {
+  from {
+    left: 45%;
+  }
+  to {
+    left: 50%;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
   scroll-behavior: smooth;
+  font-family: "Oswald", sans-serif;
 }
 
 body {

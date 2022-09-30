@@ -17,6 +17,7 @@ const toggleMenu = () => {
     navItems.forEach((item) => {
       item.classList.add("open");
     });
+    document.querySelector('body').classList.add("stopScroll")
     showMenu = true;
   } else {
     logo.classList.remove("open")
@@ -26,6 +27,7 @@ const toggleMenu = () => {
     navItems.forEach((item) => {
       item.classList.remove("open");
     });
+    document.querySelector('body').classList.remove("stopScroll")
     showMenu = false;
   }
 };
@@ -38,6 +40,7 @@ const showHideMenu = (e) =>{
     navItems.forEach((item) => {
       item.classList.remove("open");
     });
+    document.querySelector('body').classList.remove("stopScroll")
     showMenu = false;
   }
   else{

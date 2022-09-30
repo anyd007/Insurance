@@ -40,16 +40,7 @@
     }
 
     .nav-logo {
-      width: 20vw;
-      transform: translateX(0);
       visibility: visible;
-      @include smooth;
-
-      &.open {
-        transform: translateX(-100vw);
-        display: none;
-        visibility: hidden;
-      }
     }
 
     .nav-menu {

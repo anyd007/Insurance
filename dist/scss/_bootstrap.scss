@@ -7,7 +7,35 @@ img{
     background: $background;
     padding: 20px 0;
 
-    
+    &__title{
+        padding-top: 1rem;
+        color: $secendery-color;
+        font-size: 2.5rem;
+    }
+
+    &__back{
+        display: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        color: $secendery-color;
+        cursor: pointer;
+        font-size: 2rem;
+        animation-name: first-look;
+        animation-duration: 0.5s;
+        text-decoration: none !important;
+
+        &:hover{
+            animation-name: move-back;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            color: $secendery-color;
+        }
+
+        @include screen(tablets){
+            display: inline;
+        }
+    }
 
     img{
         background: #ffffff;
@@ -21,4 +49,21 @@ img{
 
 #gallery-modal .modal-img{
     width: 100%;
+}
+
+@keyframes move-back {
+    from{
+        left: 50%;
+    }
+    to{
+        left: 45%;
+    }
+}
+@keyframes first-look {
+    from{
+        left: 45%;
+    }
+    to{
+        left: 50%;
+    }
 }

@@ -23,13 +23,29 @@
      <!-- Scroll library -->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+     <!-- Fontasome -->
+    <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
+
     <title>Galeria</title>
     <link rel="stylesheet" href="./dist/css/main.css">
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <h2 class="gallery-title">GALERIA</h2>
+        <h2 class="gallery__title d-flex justify-content-center">GALERIA</h2>
+        <a href="index.html" class="gallery__back fa-solid fa-backward-fast"></a>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+            <img class="nav-logo" src="./images/pzu_logo_rgb.png" alt="logo PZU">
+            <ul class="nav-menu">
+                <li class="nav-menu__item">
+                    <a href="index.html" class="nav-menu__link">STRONA GŁÓWNA</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section class="gallery min-vh-100">
         <div class="container-lg">
