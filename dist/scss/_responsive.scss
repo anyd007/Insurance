@@ -24,6 +24,9 @@
 }
 
 @include screen(tablets) {
+  body header{
+    padding: 0%;
+  }
   .menu-btn {
     visibility: visible;
   }
